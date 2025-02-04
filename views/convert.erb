@@ -1,0 +1,8 @@
+<h1>Convert 1 <%= @currency %> to:</h1>
+<ul>
+  <% @rates.each do |code, rate| %>
+    <li>1 <%= @currency %> = <%= rate.round(4) %> <%= code %></li>
+  <% end %>
+</ul>
+
+<a href="/">Back to currency list</a>
